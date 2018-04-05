@@ -1,0 +1,33 @@
+{
+  "name": "babel-plugin-transform-require",
+  "version": "1.0.0",
+  "description": "A babel plugin to turn ES5 require call to ES6/7",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/ --out-dir lib/",
+    "try": "npm run build && node try/run.js try/example.js",
+    "debug": "npm run build && node --inspect --debug-brk try/run.js try/example.js"
+  },
+  "keywords": [
+    "es5",
+    "es6",
+    "es2015",
+    "es7",
+    "es2016",
+    "transpiler",
+    "transplie",
+    "require",
+    "babel"
+  ],
+  "author": "Rajat Vijay",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3"
+  },
+  "dependencies": {
+    "f-matches": "^1.0.0"
+  }
+}
