@@ -1,21 +1,21 @@
 import {isVarWithRequireCalls, matchRequire, matchRequireWithProperty} from './helpers.js';
 
-module.exports = function(babel) {
+function transformRequire(babel) {
   const {types: t} = babel;
   return {
     visitor: {
       VariableDeclaration: function(path) {
         if (path.parent.type === 'Program') {
           if (isVarWithRequireCalls(path.node)) {
-            let decalrationKind = path.node.kind;
+            let declarationKind = path.node.kind;
             let declarations = path.node.declarations.map(
-              dec => varToImport(dec, decalrationKind)
+              dec => varToImport(dec, declarationKind)
             )
 
             path.replaceWithMultiple(declarations);
           }
         }
-      } 
+      }
     }
   }
 
@@ -52,3 +52,6 @@ module.exports = function(babel) {
     )
   }
 };
+
+
+export default transformRequire;
