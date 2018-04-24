@@ -19,5 +19,5 @@ fs.readFile(fileName, function(err, data) {
   });
 
   // print the generated code to screen
-  console.log("output code", out.code);
+  console.log("output code\n", out.code);
 });
