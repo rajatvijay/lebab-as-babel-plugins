@@ -1,6 +1,6 @@
 import {isVarWithRequireCalls, matchRequire, matchRequireWithProperty} from './helpers.js';
 
-function transformRequire(babel) {
+module.exports = function (babel) {
   const {types: t} = babel;
   return {
     visitor: {
@@ -52,6 +52,3 @@ function transformRequire(babel) {
     )
   }
 };
-
-
-export default transformRequire;
