@@ -63,9 +63,6 @@ describe('Export CommonJS', () => {
         '  module.exports = function () {};\n' +
         '}'
       )
-      // .withWarnings([
-      //   {line: 2, msg: 'export can only be at root level', type: 'commonjs'}
-      // ]);
     });
   });
 
