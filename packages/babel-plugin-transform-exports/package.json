@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-exports",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "description": "A babel plugin to turn ES5 exports call to ES6/7",
   "repository": "https://github.com/rajatvijay/lebab-as-babel-plugins",
@@ -10,7 +10,8 @@
     "test": "jest",
     "build": "babel src/ --out-dir lib/",
     "try": "npm run build && node try/run.js try/example.js",
-    "debug": "npm run build && node --inspect --debug-brk try/run.js try/example.js"
+    "debug": "npm run build && node --inspect --debug-brk try/run.js try/example.js",
+    "deploy": "npm run build && npm publish"
   },
   "keywords": [
     "es5",
