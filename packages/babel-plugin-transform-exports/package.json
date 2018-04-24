@@ -6,6 +6,12 @@
   "repository": "https://github.com/rajatvijay/lebab-as-babel-plugins",
   "author": "Rajat Vijay",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/ --out-dir lib/",
+    "try": "npm run build && node try/run.js try/example.js",
+    "debug": "npm run build && node --inspect --debug-brk try/run.js try/example.js"
+  },
   "keywords": [
     "es5",
     "es6",
@@ -18,6 +24,12 @@
     "babel"
   ],
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3"
+  },
+  "dependencies": {
+    "f-matches": "^1.0.0"
   }
 }
