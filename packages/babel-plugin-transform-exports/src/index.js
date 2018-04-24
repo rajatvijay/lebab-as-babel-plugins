@@ -1,6 +1,6 @@
 import {matchDefaultExports, matchNamedExports} from "./helpers";
 
-module.exports = function (babel) {
+function transformExports(babel) {
   const {types: t} = babel;
   return {
     visitor: {
@@ -59,4 +59,4 @@ module.exports = function (babel) {
   }
 }
 
-// export default transformExports;
+export default transformExports;
