@@ -6,7 +6,7 @@ A babel plugin to turn ES5 exports or module.exports call to ES6/7
 
 ## Usage
 
-### Note: For using this package as standalone, you must install `babel-cli` using `npm i --save-dev babel-cli`
+##### Note: For using this package as standalone, you must install `babel-cli` using `npm i --save-dev babel-cli`
 
 ```javascript
 import {transform} from 'babel-core';
