@@ -1,6 +1,6 @@
 import {matchDefaultExports, matchNamedExports} from "./helpers";
 
-function transformExports(babel) {
+module.exports = function (babel) {
   const {types: t} = babel;
   return {
     visitor: {
@@ -58,5 +58,3 @@ function transformExports(babel) {
     return !id1 || !id2 || id1.name === id2.name;
   }
 }
-
-export default transformExports;

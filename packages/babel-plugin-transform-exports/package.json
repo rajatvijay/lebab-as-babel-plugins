@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-exports",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "description": "A babel plugin to turn ES5 exports call to ES6/7",
   "repository": "https://github.com/rajatvijay/lebab-as-babel-plugins",
