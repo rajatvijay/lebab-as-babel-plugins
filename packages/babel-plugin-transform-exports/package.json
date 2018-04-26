@@ -31,6 +31,6 @@
     "jest": "^22.4.3"
   },
   "dependencies": {
-    "f-matches": "^1.0.0"
+    "f-matches": "^1.1.0"
   }
 }

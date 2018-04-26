@@ -1311,9 +1311,9 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
 
-f-matches@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/f-matches/-/f-matches-1.0.0.tgz#ecefa35a153c1e0bd0d094d2f21b17a5543314fe"
+f-matches@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/f-matches/-/f-matches-1.1.0.tgz#18e98545000bf381007b7a9f99a69eed0d304336"
   dependencies:
     lodash "^4.17.5"
 

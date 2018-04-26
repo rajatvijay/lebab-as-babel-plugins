@@ -1,4 +1,4 @@
-import {matches, extract} from "f-matches";
+import {matches, extract, extractAny} from "f-matches";
 
 const isExports = matches({
   type: 'Identifier',
@@ -21,7 +21,7 @@ export const matchDefaultExports = matches({
     type: 'AssignmentExpression',
     operator: '=',
     left: isModuleExports,
-    right: extract('value', undefined)
+    right: extractAny('value')
   },
 });
 
@@ -38,6 +38,6 @@ export const matchNamedExports = matches({
         type: 'Identifier'
       })
     },
-    right: extract('value', undefined)
+    right: extractAny('value')
   }
 });
